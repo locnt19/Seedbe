@@ -1,0 +1,79 @@
+footer
+	background: #202020
+	.top-footer
+		padding: 100px 0
+	h3, a, .copyright
+		color: #fff
+		font-family: 'Helvetica 65 Medium', sans-serif
+	h3
+		font-size: 22px
+		margin-bottom: 30px
+	a
+		display: block
+		margin-bottom: 10px
+	.subscribefrm
+		position: relative
+		margin-bottom: 30px
+		input
+			height: 50px
+			width: 100%
+			border: 1px solid #fff
+			background: none
+			padding: 0 50px 0 15px
+			color: #fff
+			outline: none
+			&::placeholder
+				font-family: 'Helvetica 65 Medium', sans-serif
+				color: #fff
+		button
+			outline: none
+			position: absolute
+			height: 50px
+			width: 50px
+			top: 0
+			right: 0
+			font-size: 0
+			background: none
+			border: 0
+			padding: 0
+			cursor: pointer
+			&:before
+				width: 38px
+				height: 13px
+				background: url(../img/footer-icon.png)
+				background-size: cover
+				content: ""
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+		span
+			color: #fff
+			font-family: 'Helvetica 65 Medium', sans-serif
+			display: block
+			&:before
+				color: #ffcc00
+	.line
+			width: 100%
+			height: 1px
+			background: #fff
+	.copyright
+		font-size: 12px
+		padding: 20px 0
+	@media (max-width: 992px)
+		.top-footer
+			padding: 80px 0
+	@media (max-width: 576px)
+		.top-footer
+			padding: 50px 0
+		h3
+			font-size: 16px
+			margin-bottom: 20px
+		.subscribefrm
+			input
+				padding-right: 30px
+			button
+				width: 30px
+				&:before
+					width: 21px
+					height: 7px

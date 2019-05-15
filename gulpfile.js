@@ -45,7 +45,7 @@ gulp.task('cleanImages', function () {
 
 // Task copy img
 gulp.task('copyImages', function () {
-	return gulp.src('./src/img/**/**.{svg,gif,png,jpg,jpeg}')
+	return gulp.src('./src/assets/img/**/**.{svg,gif,png,jpg,jpeg}')
 		.pipe(gulp.dest('./dist/img'));
 })
 
@@ -167,7 +167,7 @@ gulp.task('serve', function () {
 		),
 		gulp.watch(
 			[
-				'./src/img/**/**.{svg,gif,png,jpg,jpeg}'
+				'./src/assets/img/**/**.{svg,gif,png,jpg,jpeg}'
 			],
 			gulp.series('cleanImages', 'copyImages')
 		),

@@ -5,11 +5,11 @@ html
 body
 	font-family: 'Helvetica 45 Light', sans-serif
 	font-weight: 400
-	font-size: 16px
+	font-size: 15px
 	background: #fff
-	color: #3a3a3a
-	@media (max-width: 992px)
-		font-size: 15px
+	color: #161616
+	// @media (max-width: 992px)
+	// 	font-size: 15px
 	@media (max-width: 768px)
 		font-size: 14px
 	@media (max-width: 576px)
@@ -21,9 +21,19 @@ a
 	color: inherit
 	font-size: inherit
 	text-decoration: none !important
+
+h1, h2, h3, h4, h5, h6
+	font-family: 'Helvetica 65 Medium', sans-serif
+
 img
+	display: block
 	max-width: 100%
+	margin: 0 auto
 	height: auto
+ul
+	list-style: none
+	margin: 0
+	padding: 0
 hr
 	margin: 0
 	border: .5px solid #D7D7D7
@@ -35,3 +45,7 @@ hr
 @import "header/index.sass"
 
 @import "footer/index.sass"
+
+@import "lookbook/index.sass"
+
+@import "journey-detail/index.sass"
